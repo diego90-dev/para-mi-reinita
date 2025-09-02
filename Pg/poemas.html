@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poemas para Sherlyn</title>
+  <link rel="stylesheet" href="/Css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      color: #c71585;
+      font-size: 2rem;
+    }
+
+    .poemas-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .poema-columna {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      background-color: #ffe4ec;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(219, 112, 147, 0.2);
+    }
+
+    .poema-columna h3 {
+      color: #db7093;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .poema-columna p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    /* Animación de rosas flotando */
+    .rosa {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('/Img/rosa.png'); /* Asegúrate de tener esta imagen */
+      background-size: cover;
+      animation: flotar 10s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes flotar {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poemas para mi niña hermosa Sherlyn</h1>
+  </header>
+
+  <section class="poemas-section">
+    <div class="poema-columna">
+      <h3>Poema 1</h3>
+      <p>Tu sonrisa es mi sol, tu mirada mi universo.</p>
+      <h3>Poema 4</h3>
+      <p>En cada latido, tu nombre vibra como canción.</p>
+      <h3>Poema 7</h3>
+      <p>Si el tiempo se detuviera, lo haría en tus brazos.</p>
+      <h3>Poema 10</h3>
+      <p>Tu voz es el refugio donde mi alma descansa.</p>
+    </div>
+
+    <div class="poema-columna">
+      <h3>Poema 2</h3>
+      <p>Te pienso en cada silencio, te siento en cada palabra.</p>
+      <h3>Poema 5</h3>
+      <p>Tu ternura es el arte que embellece mi mundo.</p>
+      <h3>Poema 8</h3>
+      <p>Contigo aprendí que el amor no se explica, se vive.</p>
+      <h3>Poema 11</h3>
+      <p>Tu existencia es mi milagro favorito.</p>
+    </div>
+
+    <div class="poema-columna">
+      <h3>Poema 3</h3>
+      <p>Si pudiera regalarte el cielo, lo envolvería en versos.</p>
+      <h3>Poema 6</h3>
+      <p>Tus abrazos son mi hogar, tus besos mi destino.</p>
+      <h3>Poema 9</h3>
+      <p>Eres la poesía que no necesita rima.</p>
+      <h3>Poema 12</h3>
+      <p>Amarte es mi forma favorita de existir.</p>
+    </div>
+  </section>
+
+  <!-- Rosas flotando -->
+  <script>
+    function crearRosa() {
+      const rosa = document.createElement('div');
+      rosa.classList.add('rosa');
+      rosa.style.left = Math.random() * window.innerWidth + 'px';
+      rosa.style.animationDuration = (6 + Math.random() * 6) + 's';
+      document.body.appendChild(rosa);
+
+      setTimeout(() => {
+        rosa.remove();
+      }, 12000);
+    }
+
+    setInterval(crearRosa, 800);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canciones para Sherlyn</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #f08080;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #c71585;
+    }
+
+    section#musica {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section#musica h2 {
+      font-size: 1.8rem;
+      color: #db7093;
+      margin-bottom: 1rem;
+    }
+
+    section#musica p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .video {
+      background-color: #ffe4ec;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(219, 112, 147, 0.2);
+    }
+
+    .video h3 {
+      font-size: 1.1rem;
+      color: #c71585;
+      margin-bottom: 0.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Canciones que me recuerdan a ti, Sherlyn</h1>
+  </header>
+
+  <section id="musica">
+    <h2>🎧 Nuestra Banda Sonora</h2>
+    <p>Estas canciones tienen algo de nosotros: en sus letras, en sus melodías, en lo que me hacen sentir cuando pienso en ti.</p>
+
+    <div class="video-grid">
+      <div class="video">
+        <h3>Charlie USG – La Suerte</h3>
+        <iframe src="https://www.youtube.com/embed/y01RswNX03c?start=2" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <h3>3AM – No Voy a Encontrar</h3>
+        <iframe src="https://www.youtube.com/embed/NENqjUgtBSI?start=4" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <h3>3AM – Alba</h3>
+        <iframe src="https://www.youtube.com/embed/cm-ezE4URyg?start=2" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <h3>Beret & Morat – Porfa No Te Vayas</h3>
+        <iframe src="https://www.youtube.com/embed/zMvWTnVlYww?start=2" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <h3>Alex Ponce – Afrodita</h3>
+        <iframe src="https://www.youtube.com/embed/hO1_jHzQI74?start=2" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
